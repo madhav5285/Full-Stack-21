@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a =prompt("enter username");
+        let b= prompt("enter password");
+
+function match(c,d){
+    if(c==d) return true;
+    else return false;
+}
+function main(clbk,msg){
+    const result=clbk(a,b);
+    if(result==true){
+        console.log("Valid "+msg);
+    }else{
+        console.log(msg+ " Not Valid ");
+    }
+    
+}
+
+main(match,"Yes");
+    </script>
+</body>
+</html>

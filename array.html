@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const car=["car1","car2","car3"]; //array
+        let text=" " //null character
+        for(let i=0;i<car.length;i++){
+            if(i==1){
+                continue;
+            }
+            text+=car[i]+"<br>";
+        }
+        document.write(text);
+    </script>
+</body>
+</html>

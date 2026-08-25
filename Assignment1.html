@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style=" width: 300px; height:300px; background-color:yellowgreen">
+        <h2 align="center">Online Shop</h1>
+        
+        <script>
+            const item={
+                Tea:100,
+                Coffe:500,
+                Aata:600,
+                Chini:800
+            }
+            for (let x in item){
+             document.write(x+":"+item[x]+"<br>");
+        
+         }
+         
+        function show(){
+            let a=prompt("enter your product name:")
+            let b=prompt("Enter your quantity:")
+            
+        
+           
+        
+            
+        document.getElementById("totalPrice").innerHTML =
+    "Total Price: ₹" + (item[a] * b);
+        
+        }
+        
+</script>
+<button onclick="show()">Buy Now</button>
+
+    </div>
+    
+<div id="resultBox">
+    <img src="https://cdn-icons-png.flaticon.com/512/3081/3081840.png" width:30px;height: 20px;
+         alt="Shopping Cart">
+
+    <h3>Total Price</h3>
+    <p id="totalPrice"></p>
+</div>
+   
+    
+</body>
+</html>
