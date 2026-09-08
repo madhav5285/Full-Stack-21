@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Bus Booking System</title>
+
+    <style>
+
+        body {
+            font-family: Arial;
+            background-color: rgb(229, 234, 230);
+        }
+
+        .main {
+            width: 600px;
+            margin: 30px auto;
+            background-color: rgb(24, 143, 38);
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .box {
+           
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            margin-bottom: 15px;
+        }
+
+        input, select {
+            padding: 6px;
+            width: 200px;
+        }
+
+        .radio {
+            width: auto;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 8px 20px;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="main">
+
+        <h1>Bus Booking System</h1>
+
+        <!-- User Information -->
+
+        <div class="box">
+
+            <h2>User Information</h2>
+
+            <label>User Name</label>
+            <input type="text">
+            <br>
+
+            <label>User Age</label>
+            <input type="number">
+            <br>
+
+            <label>User Address No</label>
+            <input type="text">
+            <br>
+
+            <label>Select your City</label>
+            <select>
+                <option>Select City</option>
+                <option>Delhi</option>
+                <option>Noida</option>
+                <option>Agra</option>
+                <option>Lucknow</option>
+            </select>
+            <br>
+
+            <label>Journey Date</label>
+            <input type="date">
+
+        </div>
+
+
+        <!-- Bus Information -->
+
+        <div class="box">
+
+            <h2>Bus Information</h2>
+
+            <input class="radio" type="radio" name="bus">
+            AC Bus ₹2000
+            <br><br>
+
+            <input class="radio" type="radio" name="bus">
+            Non AC Bus ₹1500
+            <br><br>
+
+            <label>Select your Seat</label>
+
+            <select>
+                <option>Select Seat</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                
+            </select>
+
+            <button>Book Now</button>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
